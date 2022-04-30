@@ -1,0 +1,116 @@
+@import './functions.scss';
+
+.extCont {
+  position: relative;
+  margin-right: 1rem;
+  user-select: none;
+}
+
+.themeBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+
+  width: max-content;
+  padding: 0.2rem 0.8rem;
+  box-shadow: boxShadow(0.25, 4, var(--blue-shadow));
+  border-radius: var(--radius);
+  border: 3px solid var(--blue);
+
+  cursor: pointer;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 0.75rem;
+
+  transition: all 0.2s;
+
+  &:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+  }
+}
+
+.popupCont::-webkit-scrollbar {
+  display: none;
+}
+.popupCont {
+  scrollbar-width: none !important;
+  -webkit-scrollbar: none !important;
+  position: absolute;
+  width: 140%;
+  height: 10rem;
+  top: 160%;
+  right: 0;
+
+  transform: translateX(4px);
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  border-radius: var(--radius);
+  border: 3px solid var(--blue);
+  background-color: var(--white);
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.showPopup {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translate(0, -4px) !important;
+  box-shadow: boxShadow(0.25, 4, var(--blue-shadow)) !important;
+}
+
+.popupElement {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin: 0.4rem;
+  padding: 0.3rem 0.4rem;
+}
+.popupElement span {
+  font-weight: 600;
+  font-size: 0.64rem;
+
+	color: var(--blue);
+  transition: all 0.15s 0.05s;
+  transform: translateX(0);
+}
+.popupElement:hover span {
+}
+
+.popupElement .pointer {
+  margin-left: calc(0.3rem + 0.2vw);
+  opacity: 0;
+  transition: all 0.15s;
+}
+.popupElement:hover .pointer {
+  opacity: 1;
+  margin-left: calc(0.1rem + 0.2vw);
+}
+
+.popupElement .background {
+  z-index: -1;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  border-radius: calc(var(--radius) - 4px);
+  background-color: var(--blue);
+  opacity: 0.8;
+
+  transition: all 0.15s;
+}
+.popupElement.elementActive span {
+	color: var(--white);
+}
+.popupElement .background.elementActive {
+  width: 100%;
+  opacity: 1;
+}

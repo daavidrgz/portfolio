@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "click-to-react-component": "^1.0.6",
+    "framer-motion": "^6.3.1",
     "next": "12.1.5",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
+    "react-scrollbars-custom": "^4.0.27"
   },
   "devDependencies": {
     "@types/node": "17.0.25",
@@ -19,6 +23,7 @@
     "@types/react-dom": "18.0.2",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
+    "node-sass": "^7.0.1",
     "typescript": "4.6.3"
   }
 }

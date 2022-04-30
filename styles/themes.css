@@ -1,0 +1,66 @@
+:root.pastel {
+  --radius: 8px;
+
+  --white: #f4f1de;
+  --blue: #3d405b;
+  --green: #81b29a;
+  --orange: #e07a5f;
+  --yellow: #f2cc8f;
+
+  --blue-shadow: #7a7b87;
+}
+:root.nord {
+  --radius: 0;
+
+  --white: #d8dee9;
+  --blue: #2e3440;
+  --green: #a3be8c;
+  --orange: #b48ead;
+  --yellow: #ebcb8b;
+
+  --blue-shadow: #5d6471;
+}
+:root.catppuccin {
+  --radius: 6px;
+
+  --white: #D9E0EE;
+  --blue: #1E1E2E;
+  --green: #ABE9B3;
+  --orange: #96CDFB;
+  --yellow: #FAE3B0;
+
+  --blue-shadow: #595972;
+}
+:root.elektropunk {
+  --radius: 0;
+
+  --white: #72ffff;
+  --blue: #050028;
+  --green: #00ff8c;
+  --orange: #f453ff;
+  --yellow: #ffff56;
+
+  --blue-shadow: #554f7b;
+}
+:root.vue {
+  --radius: 6px;
+
+  --white: #e6e6e6;
+  --blue: #002b36;
+  --green: #19f9d8;
+  --orange: #09cbdd;
+  --yellow: #ffcc95;
+
+  --blue-shadow: #326e7e;
+}
+:root.gruvbox {
+  --radius: 12px;
+
+  --white: #fbf1c7;
+  --blue: #3c3836;
+  --green: #98971a;
+  --orange: #458588;
+  --yellow: #d79921;
+
+  --blue-shadow: #817873;
+}
