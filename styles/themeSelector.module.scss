@@ -2,7 +2,6 @@
 
 .extCont {
   position: relative;
-  margin-right: 1rem;
   user-select: none;
 }
 
@@ -15,21 +14,15 @@
 
   width: max-content;
   padding: 0.2rem 0.8rem;
-  box-shadow: boxShadow(0.25, 4, var(--blue-shadow));
   border-radius: var(--radius);
   border: 3px solid var(--blue);
 
   cursor: pointer;
   color: var(--blue);
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 
   transition: all 0.2s;
-
-  &:active {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-  }
 }
 
 .popupCont::-webkit-scrollbar {
@@ -61,7 +54,6 @@
   visibility: visible !important;
   opacity: 1 !important;
   transform: translate(0, -4px) !important;
-  box-shadow: boxShadow(0.25, 4, var(--blue-shadow)) !important;
 }
 
 .popupElement {

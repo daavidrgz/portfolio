@@ -5,6 +5,7 @@ export const THEMES = [
   'elektropunk',
   'vue',
   'gruvbox',
+  'modern'
 ]
 
-export const DEFAULT_THEME = 'pastel'
+export const DEFAULT_THEME = 'modern'

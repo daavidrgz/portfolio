@@ -64,3 +64,14 @@
 
   --blue-shadow: #817873;
 }
+:root.modern {
+  --radius: 4px;
+
+  --white: #ffffff;
+  --blue: #1a143d;
+  --green: #a8dadc;
+  --orange: #457b9d;
+  --yellow: #1d3557;
+
+  --blue-shadow: #5b7292af;
+}

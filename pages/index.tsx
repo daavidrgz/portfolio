@@ -17,35 +17,21 @@ const Home = () => {
       </nav>
 
       <div className={styles.titleCont}>
-        <div className={styles.title}>
-          <div className={styles.titleWord}>
-            <span>M</span>
-            <span>Y</span>
-          </div>{' '}
-          <div className={styles.titleWord}>
-            <span>P</span>
-            <span>O</span>
-            <span>R</span>
-            <span>T</span>
-            <span>F</span>
-            <span>O</span>
-            <span>L</span>
-            <span>I</span>
-            <span>O</span>
-          </div>
-        </div>
+        <span className={styles.title}>My </span>
+        <span className={styles.title}>portfolio</span>
       </div>
 
       <div className={styles.panelCont}>
         <div className={styles.panel}>
-          <div className={styles.panelTop}>
-            <span className={styles.big}>Hi, </span>
-            <span className={styles.small}>
-              my name is David. Do you want to see more about me and my work?
-            </span>
-          </div>
-          <div className={styles.panelBottom}></div>
+          <span className={styles.big}>Hi, </span>
+          <span className={styles.small}>
+            my name is David. Do you want to see more about me and my work?
+          </span>
         </div>
+
+        <button className={styles.checkOutBtn}>
+          <span>Check it out!</span>
+        </button>
       </div>
     </div>
   )
