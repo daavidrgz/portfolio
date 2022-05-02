@@ -17,29 +17,51 @@
 
 .titleCont {
   height: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 
-  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.titleCont > span {
+.titleHr {
+  overflow: hidden;
+  position: relative;
+  height: 2rem;
+  width: 20%;
+}
+.titleHr::before {
+  content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+  position: absolute;
+  left: 0;
+  top: -1.5rem;
+  font-size: 2rem;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--blue);
+  color: var(--transparent);
+}
+
+.title {
   text-align: center;
+}
+.title > span {
   user-select: none;
   width: min-content;
   font-size: 3.2rem;
   color: var(--blue);
 }
-.title:nth-child(1) {
+.title > span:nth-child(1) {
   font-weight: 500;
 }
-.title:nth-child(2) {
+.title > span:nth-child(3) {
   font-weight: 700;
+  position: relative;
+  top: -0.3rem;
 }
 
 .panelCont {
+  user-select: none;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -51,9 +73,20 @@
 
 .panel {
   height: min-content;
+  padding: 2rem;
+
   overflow: hidden;
   text-align: center;
-  color: var(--blue);
+  border-radius: var(--radius);
+  background-color: var(--blue);
+  color: var(--gray);
+}
+
+.animoji {
+  position: absolute !important;
+  top: -3.6rem !important;
+  left: 50% !important;
+  transform: translateX(-50%);
 }
 
 .panel > .big {
@@ -71,16 +104,15 @@
   overflow: hidden;
 
   padding: 0.5rem 0.8rem;
-  border: 3px solid var(--blue);
+  border: 3px solid var(--blue2);
   border-radius: var(--radius);
-  // background-color: var(--blue);
 }
 .checkOutBtn > span {
   position: relative;
   z-index: 1;
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--blue);
+  color: var(--blue2);
 
   transition: all 0.25s ease-in-out;
 }
@@ -88,19 +120,36 @@
   z-index: 0;
   content: '';
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: -4px;
+  left: -4px;
   width: 2px;
   height: 2px;
 
   border-radius: 50%;
-  background-color: var(--blue);
+  background-color: var(--blue2);
 
   transition: all 0.25s ease-in-out;
 }
 .checkOutBtn:hover:before {
-  transform: scale(200)
+  transform: scale(200);
 }
 .checkOutBtn:hover > span {
   color: var(--white);
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 220px;
 }
